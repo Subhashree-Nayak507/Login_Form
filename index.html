@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Form</title>
+    <link  rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm" onsubmit=" validateForm()">
+            <h1>Login Here</h1>
+            <div class="input-box">
+                <i class='bx bx-user'></i>
+                <input type="text" id="username"  placeholder="Username" required autocomplete="username">
+                <span id="usernameError" class="error-message"></span>
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-lock'></i>
+                <input type="password" id="password"  placeholder="Password" required autocomplete="current-password"> 
+                <span id="passwordError" class="error-message"></span>
+            </div>            
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" id="rememberMe" name="rememberMe" required>
+                    Remember Me
+                </label>
+                <span> </span> 
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>            
+              <button type="submit" class="btn">Login</button>
+              <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+              </div>
+            
+        </form>
+        <div id="success-message" class="success_text">Form is Submited!</div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
