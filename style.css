@@ -197,7 +197,6 @@ body {
  }
 .success_text {
     display: none;
-    /* Other styles as needed */
 }
 
 .success_text.show {
